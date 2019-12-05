@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>at.orgler.gitclean</string>
+    <key>ProgramArguments</key>
+    <array>
+            <string>/bin/sh</string>
+            <string>/path/to/your/script/clean_git_repositories.sh</string>
+            <string>something</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/bin:/usr/bin:/usr/local/bin</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartCalendarInterval</key>
+    <dict>
+      <key>Weekday</key>
+      <integer>5</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+    <key>KeepAlive</key>
+    <false/>
+    <key>TimeOut</key>
+    <integer>180</integer>
+    <key>ExitTimeOut</key>
+    <integer>300</integer>
+    <key>StandardOutPath</key>
+    <string>/tmp/gitclean.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/gitclean.stderr</string>
+  </dict>
+</plist>
