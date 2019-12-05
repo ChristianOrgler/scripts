@@ -1,4 +1,4 @@
-# Workflow Scripts
+# Scripts
 
 #### [Use LAN](./scripts/use_lan/)
 
