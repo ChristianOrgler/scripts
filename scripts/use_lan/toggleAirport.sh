@@ -15,7 +15,7 @@ function set_airport {
 eth_status="Off"
 
 # lets grab the ethernet name to check status
-eth_names=`networksetup -listnetworkserviceorder | sed -En 's|^\(Hardware Port: .*(Slot 1\|Ethernet\|LAN).*, Device: (en.+)\)$|\2|p'`
+eth_names=`networksetup -listnetworkserviceorder | sed -En 's|^\(Hardware Port: .*(Slot 1\|Ethernet\|LAN\|Docking).*, Device: (en.+)\)$|\2|p'`
 
 # check current ethernet status
 for eth_name in ${eth_names}; do
